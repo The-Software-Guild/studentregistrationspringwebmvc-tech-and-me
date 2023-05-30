@@ -17,7 +17,7 @@
 	<p>Name : ${stu.name}</p>
     <p>Age: ${stu.age}</p>
     <p>Mobile no: ${stu.mob}</p>
-    <p>Mobile no: ${stu.addr}</p>
+    <p>Address: ${stu.addr}</p>
     
 </body>
 
