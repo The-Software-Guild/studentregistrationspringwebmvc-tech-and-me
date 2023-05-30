@@ -14,20 +14,20 @@ import com.softra.dto.Student;
 import com.softra.service.IService;
 
 @Controller
-@RequestMapping(value="/student")
+@RequestMapping(value="")
 public class StudentController {
 	
 	@Autowired
 	private IService service;
 	
 	
-	@RequestMapping(value="/enroll.htm", method = RequestMethod.GET)
+	@RequestMapping(value="/register.htm", method = RequestMethod.GET)
 	public String enroll() {
 		//Display the enrollment form
 		return "enrolment-form";
 	}
 	
-	@RequestMapping(value="/enroll.htm", method = RequestMethod.POST)
+	@RequestMapping(value="/register.htm", method = RequestMethod.POST)
 	public String submitEnrolment(@ModelAttribute("stu") Student stu, Model model) {
 		
 		//Add the student object to the model so that this object attributes can be access by view
