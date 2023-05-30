@@ -21,18 +21,16 @@ public class StudentController {
 	private IService service;
 	
 	
-	@RequestMapping(value="/enrol.htm", method = RequestMethod.GET)
-	public String enrol() {
+	@RequestMapping(value="/enroll.htm", method = RequestMethod.GET)
+	public String enroll() {
 		//Display the enrollment form
 		return "enrolment-form";
 	}
 	
-	@RequestMapping(value="/enrol.htm", method = RequestMethod.POST)
-	public String submitEnrolment(@ModelAttribute("stu") Student stu, @RequestParam("id") Integer stuid, Model model) {
-		//set id receive from form into stuid field of Student object.
-		stu.setStuid(stuid);
+	@RequestMapping(value="/enroll.htm", method = RequestMethod.POST)
+	public String submitEnrolment(@ModelAttribute("stu") Student stu, Model model) {
 		
-		//Add the student object to the model so that this object attributes can be access by other page such as success page
+		//Add the student object to the model so that this object attributes can be access by view
 		model.addAttribute("stu",stu);
 		
 		//Send student info to service layer -> dao -> Database

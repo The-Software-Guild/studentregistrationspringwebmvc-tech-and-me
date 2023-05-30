@@ -13,8 +13,8 @@ public class StudentDAO implements IDao {
 	private JdbcTemplate template;
 
 	public void saveStudent(Student stu) {
-		String sql = "INSERT INTO student VALUES(?,?,?)";
-		template.update(sql,stu.getStuid(),stu.getFname(),stu.getLname());
+		String sql = "INSERT INTO studenttbl(name,age,mobileno,address) VALUES(?,?,?,?)";
+		template.update(sql,stu.getName(),stu.getAge(),stu.getMob(),stu.getAddr());
 	}
 
 	public void modifyStudent(Student stu) {

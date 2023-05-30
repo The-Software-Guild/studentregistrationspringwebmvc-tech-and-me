@@ -11,12 +11,14 @@
 <title>Success page</title>
 </head>
 <body>
-	<h2>Student enrollment completed successfully.</h2>
+	<h2>Registered successfully!!!</h2>
 	<br/>
-	<h3>Student Information:</h3>
-    <p>Student ID: ${stu.stuid}</p>
-    <p>First Name: ${stu.fname}</p>
-    <p>Last Name: ${stu.lname}</p>
+	<h3>Your details are:</h3>
+	<p>Name : ${stu.name}</p>
+    <p>Age: ${stu.age}</p>
+    <p>Mobile no: ${stu.mob}</p>
+    <p>Mobile no: ${stu.addr}</p>
+    
 </body>
 
 </html>

@@ -8,18 +8,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Student Enrolment Form</title>
+<title>Student Enrollment Form</title>
 </head>
 <body>
-	<form action="enrol.htm" method="post">
-		Enter Student ID</label> <input type="number" id="id" name="id" required> <br>
-		Enter First Name:</label> <input type="text" id="fname" name="fname" required> <br>
-		Enter Last Name:</label> <input type="text" id="lname" name="lname" required> <br>
-		
-		<!-- <br> <label for="age">Enter Age:</label> <input type="number" id="age" name="age" required> <br>
-		<br> <label for="mobile">Enter Mobile No:</label> <input type="tel" id="mobile" name="mobile" required> <br>
-		<br> <label for="address">Enter Address:</label> <textarea id="address" name="address" required></textarea>	<br> -->
-		
+	<form action="enroll.htm" method="post">
+		Enter First Name:</label> <input type="text" id="name" name="name" required> <br>		
+		Enter Age:</label> <input type="number" id="age" name="age" required> <br>
+		Enter Mobile No:</label> <input type="tel" id="mob" name="mob" required> <br>
+		Enter Address:</label> <input id="addr" name="addr" /><br>		
 		<br> <input type="submit" value="Submit"> <input type="reset" value="Reset">
 	</form>
 
